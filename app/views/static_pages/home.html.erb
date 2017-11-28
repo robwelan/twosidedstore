@@ -1,2 +1,11 @@
-<h1>Store - Static Home</h1>
-<p>Welcome Home</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Two-Sided-Store Toy Store</h1>
+
+  <h2>
+    Better than other toy stores.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to svg_fallback_tag("logo192x192", alt: "two-sided-store toy store logo"), '/' %>
