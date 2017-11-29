@@ -29,7 +29,7 @@ dbtest: &dbtest
 development:
   <<: *dbtest
 ##  <<: *default
-  database: twosidedstore_development
+  database: twosidedstore_development.sqlite3
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -64,7 +64,7 @@ development:
 test:
 ##  <<: *default
   <<: *dbtest
-  database: twosidedstore_test
+  database: twosidedstore_test.sqlite3
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
